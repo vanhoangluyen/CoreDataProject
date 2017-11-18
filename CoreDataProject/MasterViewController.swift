@@ -9,12 +9,14 @@
 import UIKit
 import CoreData
 
+
+
 class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -72,6 +74,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     // MARK: - Table View
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 0
